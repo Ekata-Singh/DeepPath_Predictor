@@ -6,7 +6,7 @@ Timing analysis is a crucial step in the design of any complex IP/SoC. However, 
 
 Creating an AI algorithm to predict combinational logic depth of signals in behavioural RTL can greatly speed up this process.
 
-# Approach
+## Approach
 **Dataset Creation:** Collected a dataset of RTL (Register Transfer Level) modules, capturing various signals along with their actual combinational depths.
 **Feature Engineering:** Extracted key features from the RTL code that impact combinational depth, including:
       1. **Fan-in**: Number of signals directly influencing the target signal.
