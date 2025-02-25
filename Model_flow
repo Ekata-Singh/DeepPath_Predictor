@@ -1,0 +1,16 @@
+#DeepPath_Predictor
+
+├── data/                  # Training and test datasets
+├── models/                # Trained model files (saved using TensorFlow/PyTorch joblib)
+├── plots/                 # Visualization plots (Matplotlib, Seaborn)
+├── rtl_examples/          # Example RTL files (Sample Verilog files)
+├── src/                   # Source code
+│   ├── feature_extraction.py  # RTL feature extraction using PyVerilog or HDLParser
+│   ├── model.py           # ML model definition (Using Scikit-learn, XGBoost, TensorFlow)
+│   ├── train_model.py     # Model training script (Runs in Google Colab)
+│   └── predict_depth.py   # Prediction script (Loads model & makes predictions)
+├── tests/                 # Test files (PyTest/UnitTest)
+├── evaluate_model.py      # Model evaluation script (Generates reports)
+├── run_pipeline.py        # Complete execution pipeline
+├── requirements.txt       # Project dependencies
+└── README.md              # Project documentation
