@@ -9,21 +9,21 @@ Creating an AI algorithm to predict combinational logic depth of signals in beha
 # Approach
 **Dataset Creation:** Collected a dataset of RTL (Register Transfer Level) modules, capturing various signals along with their actual combinational depths.
 **Feature Engineering:** Extracted key features from the RTL code that impact combinational depth, including:
-       **Fan-in:** Number of signals directly influencing the target signal.
-       **Fan-out:** Number of signals directly driven by the target signal.
-       **Signal Depth:** Maximum depth of a signal in the combinational logic path.
-       **Average Signal Path Length:** Average number of logic gates between inputs and outputs.
-       **Number of Signal Assignments:** Measures how frequently signals are reassigned in RTL code.
-       **Operator Count:** Total number of operators used in expressions.
-       **Conditional Count:** Number of conditional statements.
-       **Arithmetic Operations Count:** Instances of arithmetic computations.
-       **Logical Operations Count:** Instances of logical computations.
-       **Comparison Operations Count:** Number of comparison operations.
-       **Multiplexer Count:** Number of multiplexers used.
-       **Critical Path Length:** Maximum combinational path length between registers.
-       **Gate-Level Path Delay:** Estimated delay based on logic gates used.
-       **Sequential Depth:** Number of flip-flop stages in a given RTL module.
-       **Pipeline Stages:** Count of pipeline registers in the module.
+      1. **Fan-in:** Number of signals directly influencing the target signal.
+      2. **Fan-out:** Number of signals directly driven by the target signal.
+      3. **Signal Depth:** Maximum depth of a signal in the combinational logic path.
+      4. **Average Signal Path Length:** Average number of logic gates between inputs and outputs.
+      5. **Number of Signal Assignments:** Measures how frequently signals are reassigned in RTL code.
+      6. **Operator Count:** Total number of operators used in expressions.
+      7. **Conditional Count:** Number of conditional statements.
+      8. **Arithmetic Operations Count:** Instances of arithmetic computations.
+      9. **Logical Operations Count:** Instances of logical computations.
+      10. **Comparison Operations Count:** Number of comparison operations.
+      11. **Multiplexer Count:** Number of multiplexers used.
+      12. **Critical Path Length:** Maximum combinational path length between registers.
+      13. **Gate-Level Path Delay:** Estimated delay based on logic gates used.
+      14. **Sequential Depth:** Number of flip-flop stages in a given RTL module.
+      15. **Pipeline Stages:** Count of pipeline registers in the module.
 **Model Selection:** Evaluated multiple machine learning algorithms to identify the most effective predictor.
 **Training:** Trained the chosen model using the prepared dataset.
 **Evaluation:** Assessed the model’s accuracy and overall performance to ensure reliable predictions.
