@@ -9,8 +9,8 @@ Creating an AI algorithm to predict combinational logic depth of signals in beha
 # Approach
 **Dataset Creation:** Collected a dataset of RTL (Register Transfer Level) modules, capturing various signals along with their actual combinational depths.
 **Feature Engineering:** Extracted key features from the RTL code that impact combinational depth, including:
-      1. **Fan-in:** Number of signals directly influencing the target signal.
-      2. **Fan-out:** Number of signals directly driven by the target signal.
+      1. **Fan-in**: Number of signals directly influencing the target signal.
+      2. **Fan-out**: Number of signals directly driven by the target signal.
       3. **Signal Depth:** Maximum depth of a signal in the combinational logic path.
       4. **Average Signal Path Length:** Average number of logic gates between inputs and outputs.
       5. **Number of Signal Assignments:** Measures how frequently signals are reassigned in RTL code.
