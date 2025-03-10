@@ -1,4 +1,4 @@
-# RTL Combinational Depth Predictor - Solution Document
+# RTL DeepPath Predictor - Solution Document
 
 ## Project Information
 
